@@ -3,19 +3,18 @@
 /*                                                        :::      ::::::::   */
 /*   display_file.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: poqir <poqir@student.42.fr>                +#+  +:+       +#+        */
+/*   By: lpittet <lpittet@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/28 12:53:28 by poqir             #+#    #+#             */
-/*   Updated: 2024/09/28 13:36:30 by poqir            ###   ########.fr       */
+/*   Updated: 2024/09/28 16:14:02 by lpittet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-#include <fcntl.h>
+#include "../includes/display.h"
 
-void display_file(int fd)
+void	display_file(int fd)
 {
-    char buf;
+	char	buf;
 
 	while (read (fd, &buf, 1))
 		write (1, &buf, 1);
