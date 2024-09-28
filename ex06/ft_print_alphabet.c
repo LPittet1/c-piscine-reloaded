@@ -1,13 +1,25 @@
-void ft_putchar(char c);
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_print_alphabet.c                                :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: lpittet <lpittet@student.42.fr>            +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/09/28 13:52:54 by lpittet           #+#    #+#             */
+/*   Updated: 2024/09/28 13:54:28 by lpittet          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
-void    ft_print_alphabet(void)
+void	ft_putchar(char c);
+
+void	ft_print_alphabet(void)
 {
-	char    c;
+	char	c;
 
 	c = 'a';
-    while (c <= 'z')
-    {
-        ft_putchar(c);
-        c++;
-    }
+	while (c <= 'z')
+	{
+		ft_putchar(c);
+		c++;
+	}
 }

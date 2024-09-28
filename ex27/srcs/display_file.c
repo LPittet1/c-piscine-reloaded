@@ -1,25 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_numbers.c                                 :+:      :+:    :+:   */
+/*   display_file.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lpittet <lpittet@student.42.fr>            +#+  +:+       +#+        */
+/*   By: poqir <poqir@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/28 13:54:58 by lpittet           #+#    #+#             */
-/*   Updated: 2024/09/28 13:55:50 by lpittet          ###   ########.fr       */
+/*   Created: 2024/09/28 12:53:28 by poqir             #+#    #+#             */
+/*   Updated: 2024/09/28 13:36:30 by poqir            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_putchar(char c);
+#include <unistd.h>
+#include <fcntl.h>
 
-void	ft_print_numbers(void)
+void display_file(int fd)
 {
-	char	c;
+    char buf;
 
-	c = '0';
-	while (c <= '9')
-	{
-		ft_putchar(c);
-		c++;
-	}
+	while (read (fd, &buf, 1))
+		write (1, &buf, 1);
 }

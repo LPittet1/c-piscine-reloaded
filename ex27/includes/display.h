@@ -1,25 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_numbers.c                                 :+:      :+:    :+:   */
+/*   display.h                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lpittet <lpittet@student.42.fr>            +#+  +:+       +#+        */
+/*   By: poqir <poqir@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/28 13:54:58 by lpittet           #+#    #+#             */
-/*   Updated: 2024/09/28 13:55:50 by lpittet          ###   ########.fr       */
+/*   Created: 2024/09/28 13:42:29 by poqir             #+#    #+#             */
+/*   Updated: 2024/09/28 13:42:32 by poqir            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_putchar(char c);
+#ifndef DISPLAY_H
+# define DSIPLAY_H
 
-void	ft_print_numbers(void)
-{
-	char	c;
+#include <unistd.h>
+#include <fcntl.h>
 
-	c = '0';
-	while (c <= '9')
-	{
-		ft_putchar(c);
-		c++;
-	}
-}
+void	display_file(int fd);
+
+#endif

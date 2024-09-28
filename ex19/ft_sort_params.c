@@ -1,15 +1,27 @@
-void ft_putchar(char c);
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_sort_params.c                                   :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: lpittet <lpittet@student.42.fr>            +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/09/28 14:08:43 by lpittet           #+#    #+#             */
+/*   Updated: 2024/09/28 14:11:47 by lpittet          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
-void    ft_putstr(char *str)
+void	ft_putchar(char c);
+
+void	ft_putstr(char *str)
 {
-    int i;
+	int	i;
 
-    i = 0;
-    while (str[i])
-    {
-        ft_putchar(str[i]);
-        i++;
-    }
+	i = 0;
+	while (str[i])
+	{
+		ft_putchar(str[i]);
+		i++;
+	}
 }
 
 int	ft_strcmp(char *s1, char *s2)
@@ -22,9 +34,9 @@ int	ft_strcmp(char *s1, char *s2)
 	return (s1[i] - s2[i]);
 }
 
-char **f_sort(int ac, char **av)
+char	**f_sort(int ac, char **av)
 {
-    int		i;
+	int		i;
 	char	*t;
 
 	i = 1;
@@ -44,9 +56,9 @@ char **f_sort(int ac, char **av)
 	return (av);
 }
 
-int main(int ac, char **av)
+int	main(int ac, char **av)
 {
-	int i;
+	int	i;
 
 	i = 1;
 	av = f_sort(ac, av);

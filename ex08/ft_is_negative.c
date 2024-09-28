@@ -1,9 +1,21 @@
-void    ft_putchar(char c);
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_is_negative.c                                   :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: lpittet <lpittet@student.42.fr>            +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/09/28 13:56:06 by lpittet           #+#    #+#             */
+/*   Updated: 2024/09/28 13:56:40 by lpittet          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
-void ft_is_negative(int n)
+void	ft_putchar(char c);
+
+void	ft_is_negative(int n)
 {
-    if (n < 0)
-        ft_putchar('N');
-    else
-        ft_putchar('P');
+	if (n < 0)
+		ft_putchar('N');
+	else
+		ft_putchar('P');
 }

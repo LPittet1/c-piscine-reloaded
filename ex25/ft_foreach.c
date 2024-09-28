@@ -1,12 +1,23 @@
-void    ft_foreach(int *tab, int length, void (*f)(int))
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_foreach.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: lpittet <lpittet@student.42.fr>            +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/09/28 14:21:14 by lpittet           #+#    #+#             */
+/*   Updated: 2024/09/28 14:21:46 by lpittet          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+void	ft_foreach(int *tab, int length, void (*f)(int))
 {
-    int i;
+	int	i;
 
-    i = 0;
-
-    while (i < length)
-    {
-        (*f)(tab[i]);
-        i++;
-    }
+	i = 0;
+	while (i < length)
+	{
+		(*f)(tab[i]);
+		i++;
+	}
 }

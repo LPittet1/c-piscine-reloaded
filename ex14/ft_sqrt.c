@@ -1,15 +1,27 @@
-int ft_sqrt(int nb)
-{
-    int root;
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_sqrt.c                                          :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: lpittet <lpittet@student.42.fr>            +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/09/28 14:03:20 by lpittet           #+#    #+#             */
+/*   Updated: 2024/09/28 14:04:11 by lpittet          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
-    root = 1;
-    if (nb <= 0)
-        return (0);
-    while (root * root <= nb)
-    {
-        if (root * root == nb)
-            return (root);
-        root++;
-    }
-    return (0);
+int	ft_sqrt(int nb)
+{
+	int	root;
+
+	root = 1;
+	if (nb <= 0)
+		return (0);
+	while (root * root <= nb)
+	{
+		if (root * root == nb)
+			return (root);
+		root++;
+	}
+	return (0);
 }
