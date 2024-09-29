@@ -12,8 +12,11 @@ RM = rm -f
 
 all:		${NAME}
 
+%.o:%.c
+	${CC} ${CFLAGS} -I ${INCDIR} -c $< -o $@
+
 ${NAME}:	${OBJS}
-		${CC} -o ${NAME} ${OBJS}
+		${CC} ${CFLAGS} -o ${NAME} ${OBJS}
 
 clean:
 		${RM} ${OBJS}
